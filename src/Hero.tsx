@@ -100,13 +100,13 @@ const [isHeroActive, setIsHeroActive] = useState(false);
        <div className="absolute inset-0 z-0">
   <div
     className="w-full h-full"
-    style={{
-      backgroundImage: 'url(/images/Base_image.png)',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center 60',
-      backgroundColor: '#000',
-    }}
+   style={{
+  backgroundImage: 'url(/images/Base_image.png)',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: '60',
+  backgroundColor: '#000',
+}}
   />
 </div>
 

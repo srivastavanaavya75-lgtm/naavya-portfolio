@@ -27,8 +27,9 @@ export default function RevealLayer({
       className="absolute inset-0 z-10 pointer-events-none"
       style={{
         backgroundImage: "url('/images/Reveal_image.png')",
+
         backgroundSize: 'cover',
-        backgroundPosition: 'center 60%',
+        backgroundPosition: '60',
         backgroundRepeat: 'no-repeat',
 
         maskImage,
