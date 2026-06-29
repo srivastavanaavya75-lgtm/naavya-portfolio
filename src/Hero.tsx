@@ -93,10 +93,9 @@ const [isHeroActive, setIsHeroActive] = useState(false);
 
       {/* ── Hero ── */}
       <section
-        ref={heroRef}
-        className="relative w-full overflow-hidden"
-        style={{ height: '100dvh' }}
-      >
+  ref={heroRef}
+  className="relative w-full min-h-[100svh] overflow-hidden"
+>
         {/* Layer 1 – Base portrait with Ken Burns */}
        <div className="absolute inset-0 z-0">
   <div
@@ -132,18 +131,26 @@ const [isHeroActive, setIsHeroActive] = useState(false);
         {/* ─────────────────────────────────────────── */}
         {/* Layer 3 – Main text content                 */}
         {/* ─────────────────────────────────────────── */}
-        <div
-          className="absolute z-30 flex flex-col justify-center"
-          style={{
-            top: 0,
-            bottom: 0,
-            left: 'clamp(28px, 5.5vw, 80px)',
-          }}
-        >
+       <div
+  className="
+    absolute
+    z-30
+    flex
+    flex-col
+    justify-center
+
+    left-6
+    md:left-[5vw]
+
+    top-[18%]
+    md:top-0
+    md:bottom-0
+  "
+>
           {/* "I'm" */}
           <p
             className={`font-playfair italic text-white leading-none mb-1
-              text-5xl sm:text-7xl md:text-8xl
+              text-[3rem] sm:text-7xl md:text-8xl
               ${isHeroActive ? 'anim-fade-up delay-250' : 'opacity-0'}`}
             style={{ fontWeight: 500 }}
           >
@@ -153,7 +160,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
           {/* NAAVYA */}
           <h1
             className={`font-inter font-bold text-white leading-[0.9] uppercase
-              text-5xl sm:text-7xl md:text-8xl
+              text-[3.5rem] sm:text-7xl md:text-8xl
               red-glow
               ${isHeroActive ? 'anim-fade-up delay-420' : 'opacity-0'}`}
             style={{ letterSpacing: '-0.08em' }}
@@ -174,7 +181,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
 
         {/* ── Bottom-left description (desktop only) ── */}
         <div
-          className={`absolute z-30 hidden md:block
+          className={`absolute z-30 hidden lg:block
             ${isHeroActive ? 'anim-fade-up delay-700' : 'opacity-0'}`}
           style={{ left: 'clamp(28px, 5.5vw, 100px)', bottom: '3.5rem', maxWidth: '320px' }}
         >
@@ -186,13 +193,26 @@ const [isHeroActive, setIsHeroActive] = useState(false);
         </div>
 
         {/* ── Bottom-right description ── */}
-        <div
-          className={`absolute z-30 right-6 md:right-10 bottom-14
-            ${isHeroActive ? 'anim-fade-up delay-850' : 'opacity-0'}`}
-          style={{ maxWidth: '260px' }}
-        >
+       <div
+  className={`
+    absolute
+    z-30
+
+    left-6
+    right-6
+    bottom-32
+
+    md:left-auto
+    md:right-10
+    md:bottom-14
+
+    md:max-w-[260px]
+
+    ${isHeroActive ? 'anim-fade-up delay-850' : 'opacity-0'}
+  `}
+>
           <div className="w-6 h-px bg-white/30 mb-3" />
-          <p className="font-inter text-white/55 text-xs leading-relaxed font-light text-right md:text-right">
+          <p className="font-inter text-white/55 text-sm md:text-xs leading-relaxed font-light text-center md:text-right">
             Frontend developer who blends design and code. Building premium interfaces,
             AI-powered projects, and memorable digital experiences.
           </p>
