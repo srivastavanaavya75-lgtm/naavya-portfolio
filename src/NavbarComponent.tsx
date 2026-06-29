@@ -14,7 +14,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-10 py-5">
-        {/* Logo */}
         <a href="#" className="flex items-baseline gap-[2px] select-none">
           <span
             className="font-playfair italic text-white text-[1.15rem] tracking-tight"
@@ -28,7 +27,6 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex glass-pill rounded-full px-2 py-2 gap-1">
           {NAV_ITEMS.map((item) => (
             <a
@@ -54,7 +52,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Resume Button */}
         <a
           href="/resume/Naavya_Resume.pdf"
           target="_blank"
@@ -81,7 +78,6 @@ export default function Navbar() {
           Resume
         </a>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white p-1"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -90,7 +86,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl pt-24 px-8 md:hidden">
           <div className="flex flex-col">

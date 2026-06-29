@@ -7,7 +7,9 @@ interface RevealLayerProps {
   };
 }
 
-export default function RevealLayer({ mousePos }: RevealLayerProps) {
+export default function RevealLayer({
+  mousePos,
+}: RevealLayerProps) {
   const maskImage = useMemo(
     () =>
       `radial-gradient(
@@ -25,10 +27,8 @@ export default function RevealLayer({ mousePos }: RevealLayerProps) {
       className="absolute inset-0 z-10 pointer-events-none"
       style={{
         backgroundImage: "url('/images/Reveal_image.png')",
-
-        // IMPORTANT:
         backgroundSize: 'cover',
-        backgroundPosition: 'center 60',
+        backgroundPosition: 'center 60%',
         backgroundRepeat: 'no-repeat',
 
         maskImage,
