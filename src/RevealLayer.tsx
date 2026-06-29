@@ -29,7 +29,7 @@ export default function RevealLayer({
         backgroundImage: "url('/images/Reveal_image.png')",
 
         backgroundSize: 'cover',
-        backgroundPosition: '60',
+        backgroundPosition: 'center 60',
         backgroundRepeat: 'no-repeat',
 
         maskImage,

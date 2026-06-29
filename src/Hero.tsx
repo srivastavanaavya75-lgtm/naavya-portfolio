@@ -104,7 +104,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
   backgroundImage: 'url(/images/Base_image.png)',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: '60',
+  backgroundPosition: 'center 60',
   backgroundColor: '#000',
 }}
   />
