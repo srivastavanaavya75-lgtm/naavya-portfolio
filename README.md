@@ -50,7 +50,7 @@ src/
 
 🐙 GitHub: https://github.com/srivastavanaavya75-lgtm
 
-📧 Email: your-email@example.com
+📧 Email: srivastavanaavya75@gmail.com
 
 ## Author
 
