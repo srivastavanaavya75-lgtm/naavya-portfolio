@@ -3,7 +3,7 @@
 A premium personal portfolio built using React, TypeScript, Vite and Tailwind CSS.
 
 ## Live Demo
-[Vercel Link]
+https://naavya-portfolio-ueb4.vercel.app/
 
 ## Features
 
