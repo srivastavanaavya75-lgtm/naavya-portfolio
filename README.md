@@ -1,14 +1,19 @@
-# Naavya Portfolio
+# Naavya Srivastava Portfolio
 
-A modern luxury portfolio website built using React, TypeScript, Vite and Tailwind CSS.
+A premium personal portfolio built using React, TypeScript, Vite and Tailwind CSS.
+
+## Live Demo
+[Vercel Link]
 
 ## Features
 
+- Luxury dark UI
 - Responsive Design
-- Interactive Spotlight Hero Section
-- Projects Showcase
-- Skills Section
-- Certifications Section
+- Interactive Hero Section
+- Spotlight Reveal Effect
+- About Section
+- Skills Showcase
+- Project Gallery
 - Contact Section
 - Resume Download
 
@@ -20,10 +25,34 @@ A modern luxury portfolio website built using React, TypeScript, Vite and Tailwi
 - Tailwind CSS
 - Lucide React
 
-## Live Demo
+## Installation
 
-https://naavya-portfolio.netlify.app
+git clone <repo>
+
+cd naavya-portfolio
+
+npm install
+
+npm run dev
+
+## Project Structure
+
+src/
+├── components/
+├── data/
+├── Hero.tsx
+├── App.tsx
+└── index.css
+
+## Connect With Me
+
+💼 LinkedIn: https://www.linkedin.com/in/naavya-srivastava-661bb03ba/
+
+🐙 GitHub: https://github.com/srivastavanaavya75-lgtm
+
+📧 Email: your-email@example.com
 
 ## Author
 
 Naavya Srivastava
+
