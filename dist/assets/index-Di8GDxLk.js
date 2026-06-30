@@ -114,34 +114,39 @@ Error generating stack: `+s.message+`
                 py-4
                 rounded-full
                 w-fit
-              `,children:"Resume"})]})})]})}function Pv({mousePos:e}){const t=M.useMemo(()=>`radial-gradient(
-        circle 400px at ${e.x}px ${e.y}px,
-        rgba(255,255,255,1) 0%,
-        rgba(255,255,255,0.95) 50%,
-        rgba(255,255,255,0.6) 75%,
-        rgba(255,255,255,0) 100%
-      )`,[e]);return v.jsx("div",{className:"absolute inset-0 z-10 pointer-events-none",style:{backgroundImage:"url('/images/Reveal_image.png')",backgroundSize:"cover",backgroundPosition:"center 60",backgroundRepeat:"no-repeat",maskImage:t,WebkitMaskImage:t,maskRepeat:"no-repeat",WebkitMaskRepeat:"no-repeat",filter:"brightness(1.05) saturate(1.15)"}})}function Cv(){const[e,t]=M.useState({x:-9999,y:-9999}),[n,r]=M.useState({x:-9999,y:-9999}),[i,s]=M.useState(!1),o=M.useRef(null),a=M.useRef(null),l=M.useRef(null),u=M.useRef({x:0,y:0}),c=M.useRef({x:0,y:0}),f=M.useRef(0),d=M.useCallback(()=>{a.current&&(a.current.style.left=`${u.current.x}px`,a.current.style.top=`${u.current.y}px`),l.current&&(c.current.x+=(u.current.x-c.current.x)*.22,c.current.y+=(u.current.y-c.current.y)*.22,l.current.style.left=`${c.current.x}px`,l.current.style.top=`${c.current.y}px`),f.current=requestAnimationFrame(d)},[]);return M.useEffect(()=>(f.current=requestAnimationFrame(d),()=>cancelAnimationFrame(f.current)),[d]),M.useEffect(()=>{const y=g=>{u.current={x:g.clientX,y:g.clientY};const x=o.current;if(x){const S=x.getBoundingClientRect();g.clientX>=S.left&&g.clientX<=S.right&&g.clientY>=S.top&&g.clientY<=S.bottom?t({x:g.clientX-S.left,y:g.clientY-S.top}):t({x:-9999,y:-9999})}};return window.addEventListener("mousemove",y),()=>window.removeEventListener("mousemove",y)},[]),M.useEffect(()=>{let y;const g=()=>{r(x=>({x:x.x+(e.x-x.x)*.15,y:x.y+(e.y-x.y)*.15})),y=requestAnimationFrame(g)};return g(),()=>cancelAnimationFrame(y)},[e]),M.useEffect(()=>{const y=setTimeout(()=>s(!0),50);return()=>clearTimeout(y)},[]),v.jsxs(v.Fragment,{children:[v.jsx("div",{ref:a,className:"custom-cursor hidden md:block"}),v.jsx("div",{ref:l,className:"custom-cursor-ring hidden md:block"}),v.jsxs("section",{ref:o,className:"relative w-full min-h-[100svh] overflow-hidden",children:[v.jsx("div",{className:"absolute inset-0 z-0",children:v.jsx("div",{className:"w-full h-full",style:{backgroundImage:"url(/images/Base_image.png)",backgroundSize:"cover",backgroundRepeat:"no-repeat",backgroundPosition:"center 60",backgroundColor:"#000"}})}),v.jsx(Pv,{mousePos:n}),v.jsx("div",{className:"hero-red-glow absolute inset-0 pointer-events-none",style:{zIndex:15}}),v.jsx("div",{className:"hero-gradient-overlay absolute inset-0 z-20 pointer-events-none"}),v.jsx("div",{className:"hero-gradient-bottom absolute inset-0 z-20 pointer-events-none"}),v.jsx("div",{className:"absolute bottom-0 left-0 w-80 h-80 z-20 pointer-events-none",style:{background:"radial-gradient(ellipse at bottom left, rgba(74,0,16,0.28) 0%, transparent 70%)"}}),v.jsxs("div",{className:`\r
+              `,children:"Resume"})]})})]})}function Pv({mousePos:e}){const t=M.useMemo(()=>window.innerWidth<768?`radial-gradient(
+      circle 1200px at 50% 50%,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 100%
+    )`:`radial-gradient(
+    circle 400px at ${e.x}px ${e.y}px,
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0.95) 50%,
+    rgba(255,255,255,0.6) 75%,
+    rgba(255,255,255,0) 100%
+  )`,[e]);return v.jsx("div",{className:"absolute inset-0 z-10 pointer-events-none",style:{backgroundImage:"url('/images/Reveal_image.png')",backgroundSize:"cover",backgroundPosition:"center 15%",backgroundRepeat:"no-repeat",maskImage:t,WebkitMaskImage:t,maskRepeat:"no-repeat",WebkitMaskRepeat:"no-repeat",filter:"brightness(1.05) saturate(1.15)"}})}function Cv(){const[e,t]=M.useState({x:-9999,y:-9999}),[n,r]=M.useState({x:-9999,y:-9999}),[i,s]=M.useState(!1),o=M.useRef(null),a=M.useRef(null),l=M.useRef(null),u=M.useRef({x:0,y:0}),c=M.useRef({x:0,y:0}),f=M.useRef(0),d=M.useCallback(()=>{a.current&&(a.current.style.left=`${u.current.x}px`,a.current.style.top=`${u.current.y}px`),l.current&&(c.current.x+=(u.current.x-c.current.x)*.22,c.current.y+=(u.current.y-c.current.y)*.22,l.current.style.left=`${c.current.x}px`,l.current.style.top=`${c.current.y}px`),f.current=requestAnimationFrame(d)},[]);return M.useEffect(()=>(f.current=requestAnimationFrame(d),()=>cancelAnimationFrame(f.current)),[d]),M.useEffect(()=>{const y=g=>{u.current={x:g.clientX,y:g.clientY};const x=o.current;if(x){const S=x.getBoundingClientRect();g.clientX>=S.left&&g.clientX<=S.right&&g.clientY>=S.top&&g.clientY<=S.bottom?t({x:g.clientX-S.left,y:g.clientY-S.top}):t({x:-9999,y:-9999})}};return window.addEventListener("mousemove",y),()=>window.removeEventListener("mousemove",y)},[]),M.useEffect(()=>{let y;const g=()=>{r(x=>({x:x.x+(e.x-x.x)*.15,y:x.y+(e.y-x.y)*.15})),y=requestAnimationFrame(g)};return g(),()=>cancelAnimationFrame(y)},[e]),M.useEffect(()=>{const y=setTimeout(()=>s(!0),50);return()=>clearTimeout(y)},[]),v.jsxs(v.Fragment,{children:[v.jsx("div",{ref:a,className:"custom-cursor hidden md:block"}),v.jsx("div",{ref:l,className:"custom-cursor-ring hidden md:block"}),v.jsxs("section",{ref:o,className:"relative w-full min-h-[100svh] overflow-hidden",children:[v.jsx("div",{className:"absolute inset-0 z-0",children:v.jsx("div",{className:"w-full h-full",style:{backgroundImage:"url(/images/Base_image.png)",backgroundSize:"cover",backgroundRepeat:"no-repeat",backgroundPosition:"center 15%",backgroundColor:"#000"}})}),v.jsx(Pv,{mousePos:n}),v.jsx("div",{className:"hero-red-glow absolute inset-0 pointer-events-none",style:{zIndex:15}}),v.jsx("div",{className:"hero-gradient-overlay absolute inset-0 z-20 pointer-events-none"}),v.jsx("div",{className:"hero-gradient-bottom absolute inset-0 z-20 pointer-events-none"}),v.jsx("div",{className:"absolute bottom-0 left-0 w-80 h-80 z-20 pointer-events-none",style:{background:"radial-gradient(ellipse at bottom left, rgba(74,0,16,0.28) 0%, transparent 70%)"}}),v.jsxs("div",{className:`\r
     absolute\r
     z-30\r
     flex\r
     flex-col\r
     justify-center\r
 \r
-    left-6\r
+    left-4\r
     md:left-[5vw]\r
 \r
-    top-[18%]\r
+    top-[8%]\r
     md:top-0\r
     md:bottom-0\r
   `,children:[v.jsx("p",{className:`font-playfair italic text-white leading-none mb-1
               text-[3rem] sm:text-7xl md:text-8xl
               ${i?"anim-fade-up delay-250":"opacity-0"}`,style:{fontWeight:500},children:"I'm"}),v.jsx("h1",{className:`font-inter font-bold text-white leading-[0.9] uppercase
-              text-[3.5rem] sm:text-7xl md:text-8xl
+              text-[3rem] sm:text-7xl md:text-8xl
               red-glow
-              ${i?"anim-fade-up delay-420":"opacity-0"}`,style:{letterSpacing:"-0.08em"},children:"NAAVYA"}),v.jsx("p",{className:`font-playfair italic text-white/90 mt-4
-              text-base sm:text-lg md:text-xl
+              ${i?"anim-fade-up delay-420":"opacity-0"}`,style:{letterSpacing:"-0.06em"},children:"NAAVYA"}),v.jsx("p",{className:`font-playfair italic text-white/90 mt-4
+              text-sm sm:text-lg md:text-xl
               ${i?"anim-fade-up delay-580":"opacity-0"}`,style:{fontWeight:500},children:"Frontend Developer"})]}),v.jsx("div",{className:`absolute z-30 hidden lg:block
             ${i?"anim-fade-up delay-700":"opacity-0"}`,style:{left:"clamp(28px, 5.5vw, 100px)",bottom:"3.5rem",maxWidth:"320px"},children:v.jsx("p",{className:"font-inter text-white/50 text-sm leading-relaxed font-light",children:"I craft modern digital experiences with React, AI tools, and creative development. Passionate about building products that look beautiful and feel effortless."})}),v.jsxs("div",{className:`
+    hidden md:block
     absolute
     z-30
 

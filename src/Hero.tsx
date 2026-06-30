@@ -104,7 +104,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
   backgroundImage: 'url(/images/Base_image.png)',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center 60',
+  backgroundPosition: 'center 15%',
   backgroundColor: '#000',
 }}
   />
@@ -139,10 +139,10 @@ const [isHeroActive, setIsHeroActive] = useState(false);
     flex-col
     justify-center
 
-    left-6
+    left-4
     md:left-[5vw]
 
-    top-[18%]
+    top-[8%]
     md:top-0
     md:bottom-0
   "
@@ -160,10 +160,10 @@ const [isHeroActive, setIsHeroActive] = useState(false);
           {/* NAAVYA */}
           <h1
             className={`font-inter font-bold text-white leading-[0.9] uppercase
-              text-[3.5rem] sm:text-7xl md:text-8xl
+              text-[3rem] sm:text-7xl md:text-8xl
               red-glow
               ${isHeroActive ? 'anim-fade-up delay-420' : 'opacity-0'}`}
-            style={{ letterSpacing: '-0.08em' }}
+            style={{ letterSpacing: '-0.06em' }}
           >
             NAAVYA
           </h1>
@@ -171,7 +171,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
           {/* Subtitle */}
           <p
             className={`font-playfair italic text-white/90 mt-4
-              text-base sm:text-lg md:text-xl
+              text-sm sm:text-lg md:text-xl
               ${isHeroActive ? 'anim-fade-up delay-580' : 'opacity-0'}`}
             style={{ fontWeight: 500 }}
           >
@@ -195,6 +195,7 @@ const [isHeroActive, setIsHeroActive] = useState(false);
         {/* ── Bottom-right description ── */}
        <div
   className={`
+    hidden md:block
     absolute
     z-30
 

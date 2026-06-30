@@ -10,17 +10,23 @@ interface RevealLayerProps {
 export default function RevealLayer({
   mousePos,
 }: RevealLayerProps) {
-  const maskImage = useMemo(
-    () =>
-      `radial-gradient(
-        circle 400px at ${mousePos.x}px ${mousePos.y}px,
-        rgba(255,255,255,1) 0%,
-        rgba(255,255,255,0.95) 50%,
-        rgba(255,255,255,0.6) 75%,
-        rgba(255,255,255,0) 100%
-      )`,
-    [mousePos]
-  );
+  const maskImage = useMemo(() => {
+  if (window.innerWidth < 768) {
+    return `radial-gradient(
+      circle 1200px at 50% 50%,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 100%
+    )`;
+  }
+
+  return `radial-gradient(
+    circle 400px at ${mousePos.x}px ${mousePos.y}px,
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0.95) 50%,
+    rgba(255,255,255,0.6) 75%,
+    rgba(255,255,255,0) 100%
+  )`;
+}, [mousePos]);
 
   return (
     <div
@@ -29,7 +35,7 @@ export default function RevealLayer({
         backgroundImage: "url('/images/Reveal_image.png')",
 
         backgroundSize: 'cover',
-        backgroundPosition: 'center 60',
+        backgroundPosition: 'center 15%',
         backgroundRepeat: 'no-repeat',
 
         maskImage,
