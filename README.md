@@ -1,14 +1,17 @@
-# Naavya Srivastava Portfolio
+# 🚀 Naavya Srivastava Portfolio
 
-A premium personal portfolio built using React, TypeScript, Vite and Tailwind CSS.
+A premium personal portfolio built using **React, TypeScript, Vite, and Tailwind CSS**, showcasing my projects, skills, and frontend development journey.
 
-## Live Demo
-https://naavya-portfolio-ueb4.vercel.app/
+## 🌐 Live Demo
 
-## Features
+🔗 https://naavya-portfolio-ueb4.vercel.app/
 
-- Luxury dark UI
-- Responsive Design
+---
+
+## ✨ Features
+
+- Luxury Dark UI
+- Fully Responsive Design
 - Interactive Hero Section
 - Spotlight Reveal Effect
 - About Section
@@ -17,7 +20,9 @@ https://naavya-portfolio-ueb4.vercel.app/
 - Contact Section
 - Resume Download
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
 
 - React
 - TypeScript
@@ -25,34 +30,50 @@ https://naavya-portfolio-ueb4.vercel.app/
 - Tailwind CSS
 - Lucide React
 
-## Installation
+---
 
-git clone <repo>
+## 📦 Installation
+
+```bash
+git clone https://github.com/srivastavanaavya75-lgtm/naavya-portfolio.git
 
 cd naavya-portfolio
 
 npm install
 
 npm run dev
+```
 
-## Project Structure
+---
 
+## 📁 Project Structure
+
+```text
 src/
 ├── components/
 ├── data/
 ├── Hero.tsx
 ├── App.tsx
 └── index.css
+```
 
-## Connect With Me
+---
 
-💼 LinkedIn: https://www.linkedin.com/in/naavya-srivastava-661bb03ba/
+## 🤝 Connect With Me
 
-🐙 GitHub: https://github.com/srivastavanaavya75-lgtm
+💼 LinkedIn  
+https://www.linkedin.com/in/naavya-srivastava-661bb03ba/
 
-📧 Email: srivastavanaavya75@gmail.com
+🐙 GitHub  
+https://github.com/srivastavanaavya75-lgtm
 
-## Author
+📧 Email  
+srivastavanaavya75@gmail.com
 
-Naavya Srivastava
+---
 
+## 👩‍💻 Author
+
+**Naavya Srivastava**
+
+Frontend Developer | React Developer | CSE Data Science Student
